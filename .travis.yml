@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+notifications:
+  email:
+  - stephen@ingenuitydesign.com
+before_install: npm install -g grunt-cli
+before_script: grunt seed
+env:
+  RABBIT_URI: amqp://localhost
+  MONGO_URI: mongodb://localhost/test
+  REDIS_URI: redis://localhost
+services:
+- mongodb
+- redis-server
+notifications:
+  slack: ingenuitydesign:qgQNtNEtntUleBRNJaX90V09
