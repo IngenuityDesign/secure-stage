@@ -4,7 +4,8 @@
   "description": "Reverse-proxying secure staging infrastructure for client review with SSO.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node index.js"
   },
   "author": "Stephen Parente <stephen@ingenuitydesign.com>",
   "license": "ISC",
